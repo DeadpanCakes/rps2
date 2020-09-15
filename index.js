@@ -79,7 +79,7 @@ const gameMenu = (() => {
     const resetBtn = makeBtn();
     resetBtn.textContent = "Reset Game";
     resetBtn.addEventListener("click", () => {
-        if (getAnimPlaying === false) {
+        if (getAnimPlaying() === false) {
             game.gameReset();
             scoreboardSpan.textContent = game.printScore();
             announcerH1.textContent = "First To Five Wins!";
