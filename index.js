@@ -158,7 +158,7 @@ const userInterface = (() => {
                     gameMenu.displayHand(playerMove);
                     gameMenu.displayHand(comMove);
                     animPlaying = false
-                }, 1720);
+                }, 1750);
             }
         }
     };
