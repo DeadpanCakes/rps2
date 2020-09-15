@@ -27,7 +27,6 @@ const gameMenu = (() => {
     const announcerH1 = makeH1();
     announcerH1.textContent = "First To Five Wins!";
     announcerH1.id = "announcer";
-    announcerH1.addEventListener("click", () => game.setScore(5))
 
     const fieldDiv = makeDiv();
     fieldDiv.id = "field";
