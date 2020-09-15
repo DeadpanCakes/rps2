@@ -9,7 +9,7 @@ const makeSpan = () => document.createElement("span");
 const mainMenu = (() => {
     const menuArt = makeImg();
     menuArt.alt = "Rock Paper Scissors Logo: Three Cartoon Hands Representing Each Of The Titular Choices";
-    menuArt.src = "/rps.png";
+    menuArt.src = "https://deadpancakes.github.io/rps2/rps.png";
     menuArt.id = "menuArt";
 
     const title = makeH1();
@@ -32,10 +32,10 @@ const gameMenu = (() => {
     const fieldDiv = makeDiv();
     fieldDiv.id = "field";
     const playerHand = makeImg();
-    playerHand.src = "/pcrock.png"
+    playerHand.src = "https://deadpancakes.github.io/rps2/pcrock.png";
     playerHand.id = "playerHand";
     const comHand = makeImg();
-    comHand.src = "/comrock.png";
+    comHand.src = "https://deadpancakes.github.io/rps2/comrock.png";
     comHand.id = "comHand";
     fieldDiv.appendChild(playerHand);
     fieldDiv.appendChild(comHand);
