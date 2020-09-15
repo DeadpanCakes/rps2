@@ -83,6 +83,8 @@ const gameMenu = (() => {
             game.gameReset();
             scoreboardSpan.textContent = game.printScore();
             announcerH1.textContent = "First To Five Wins!";
+            gameMenu.playerHand.src = "https://deadpancakes.github.io/rps2/pcrock.png";
+            gameMenu.comHand.src = "https://deadpancakes.github.io/rps2/comrock.png";
         }
     });
     const toMainMenuBtn = makeBtn();
