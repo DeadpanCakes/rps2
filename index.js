@@ -141,8 +141,8 @@ const userInterface = (() => {
             if (animPlaying === false) {
                 animPlaying = true;
                 if (gameMenu.playerHand.src !== "https://deadpancakes.github.io/rps2/pcrock.png" || gameMenu.comHand.src !== "https://deadpancakes.github.io/rps2/comrock.png") {
-                    gameMenu.playerHand.src = "/pcrock.png";
-                    gameMenu.comHand.src = "/comrock.png";
+                    gameMenu.playerHand.src = "https://deadpancakes.github.io/rps2/pcrock.png" ;
+                    gameMenu.comHand.src = "https://deadpancakes.github.io/rps2/comrock.png";
                 }
                 let playerMove = e.target.textContent;
                 let comMove = game.genComMove();
