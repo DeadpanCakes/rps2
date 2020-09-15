@@ -42,23 +42,17 @@ const gameMenu = (() => {
 
     const displayHand = (move) => {
         switch (move) {
-            case "Rock":
-                playerHand.src = "/pcrock.png";
-                break;
             case "Paper":
-                playerHand.src = "/pcpaper.png";
+                playerHand.src = "https://deadpancakes.github.io/rps2/pcpaper.png";
                 break;
             case "Scissors":
-                playerHand.src = "/pcscissors.png";
-                break;
-            case "comRock":
-                comHand.src = "/comrock.png";
+                playerHand.src = "https://deadpancakes.github.io/rps2/pcscissors.png";
                 break;
             case "comPaper":
-                comHand.src = "/compaper.png";
+                comHand.src = "https://deadpancakes.github.io/rps2/compaper.png";
                 break;
             case "comScissors":
-                comHand.src = "/comscissors.png";
+                comHand.src = "https://deadpancakes.github.io/rps2/comscissors.png";
                 break;
         }
     }
@@ -146,7 +140,7 @@ const userInterface = (() => {
         } else {
             if (animPlaying === false) {
                 animPlaying = true;
-                if (gameMenu.playerHand.src !== "/pcrock.png") {
+                if (gameMenu.playerHand.src !== "https://deadpancakes.github.io/rps2/pcrock.png" || gameMenu.comHand.src !== "https://deadpancakes.github.io/rps2/comrock.png") {
                     gameMenu.playerHand.src = "/pcrock.png";
                     gameMenu.comHand.src = "/comrock.png";
                 }
